@@ -14,12 +14,6 @@ function dividir(a, b) {
     return a / b;
 }
 
-const PI = 3.14;
-
 module.exports = {
-    somar,
-    subtrair,
-    multiplicar,
-    dividir,
-    PI
-}
+    somar, subtrair, multiplicar, dividir,
+};
