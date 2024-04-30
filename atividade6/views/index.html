@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-primary text-white text-center p-5">
+                <h1>Formulário</h1>
+                <a href="/dados" class="text-white">Dados</a>
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <form action="/dados" method="POST" class="row g-3 mt-3 mb-3">
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input name="nome" type="name" class="form-control" id="nome" placeholder="Nome completo" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input name="telefone" type="phone" class="form-control" id="telefone" placeholder="(00) 90000-0000"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <label for="data" class="form-label">Data de Agendamento</label>
+                    <input name="data" type="date" class="form-control" id="data" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input name="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="estado" class="form-label">Estado</label>
+                    <select name="estado" id="estado" class="form-select" required>
+                        <option selected>Escolha...</option>
+                        <option>São Paulo</option>
+                        <option>Distrito Federal</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Goiás</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input name="cep" type="text" class="form-control" id="cep" placeholder="00000-000" required>
+                </div>
+                <div class="col-12">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input name="endereco" type="text" class="form-control" id="endereco"
+                        placeholder="Quadra, rua, bairro..." required>
+                </div>
+                <div class="col-md-6">
+                    <label for="numero" class="form-label">Número</label>
+                    <input name="numero" type="number" class="form-control" id="numero"
+                        placeholder="Número da casa, lote..." required>
+                </div>
+                <div class="col-md-6">
+                    <label for="complemento" class="form-label">Complemento</label>
+                    <input name="complemento" type="text" class="form-control" id="complemento"
+                        placeholder="Apartamento, andar..." required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Concordo com os termos e condições
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
